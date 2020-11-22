@@ -21,6 +21,7 @@
 <p>The fitness and bodybuilding industry in Bangladesh is currently blooming like never before. Almost 3-4 gyms are getting launched every month all over Dhaka. But sadly the existing management system of the gyms are very primitive and technologically backdated. Still now papers and pen are being used to record the registration of clients, attendance, monthly fees, workout routines, diet charts, equipment maintenance, etc. As a result it becomes extremely tough for the manager to monitor and keep everything in sync. The clients also don’t remember to bring their workout routines every day or forget to maintain their daily diet as those papers are not always around. It creates obstruction in reaching their goals. ‘Total Fitness 365’ has been created to remove all these hassles and make everything simple for both the manager/owner and the clients.</p>
 <p>The idea of my project is to digitalize the relationship and all the processes that happen between a gym owner/manager and its members. It will connect all the gyms with its respective members. The gym owner will handle the management and the client will track his fitness all under a single app.</p>
 <p>The main purpose of this system is to remove the prevalent analog system by bringing digitalized solution to improve the functionality of both users (owner & client) which will help them reach their goals in a faster calculated manner.</p>
+<p>&nbsp;</p>
 <p><strong>FEATURES</strong></p>
 <ul>
 <li>Easy registration of gyms after app subscription by respective gym owner/manager.</li>
