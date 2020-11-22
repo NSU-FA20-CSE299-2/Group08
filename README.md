@@ -30,8 +30,8 @@
 <li>Clients will be able to view their workout routine, diet-chart, pay membership fee, submit attendance and track their overall progress.</li>
 <li>Clients will be reminded of their diet chart and workout routine in the designated time of the day via push notifications.</li>
 </ul>
-<p><strong>TECHNOLOGY</strong></p>
 <p>&nbsp;</p>
+<p><strong>TECHNOLOGY</strong></p>
 <p><em>Frontend</em></p>
 <p>I will use Flutter for the frontend because of its multi-platform portability. With a single codebase the app will be able to run smoothly on both android and iOS.</p>
 <p><em>Backend</em></p>
