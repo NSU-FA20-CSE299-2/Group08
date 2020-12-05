@@ -1,0 +1,20 @@
+//first code in dart
+void main()
+{
+  print("hello world");
+  //print("asd");
+}
+
+//strings
+void main()
+{
+  int x;
+  x=5;
+  print(x);
+  String s="dart for flutter"
+    " new line ";
+  var t='ok';
+  print(s);
+  print(t);
+  print("the asnswer is $x");
+}
