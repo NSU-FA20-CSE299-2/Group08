@@ -17,6 +17,7 @@
 <p align="center"><strong>Date Prepared</strong><strong>: </strong>14/11/2020</p>
 <p><strong>&nbsp;</strong></p>
 <p><strong>&nbsp;</strong></p>
+<div align="justify">
 <p><strong>INTRODUCTION</strong></p>
 <p>The fitness and bodybuilding industry in Bangladesh is currently blooming like never before. Almost 3-4 gyms are getting launched every month all over Dhaka. But sadly the existing management system of the gyms are very primitive and technologically backdated. Still now papers and pen are being used to record the registration of clients, attendance, monthly fees, workout routines, diet charts, equipment maintenance, etc. As a result it becomes extremely tough for the manager to monitor and keep everything in sync. The clients also don’t remember to bring their workout routines every day or forget to maintain their daily diet as those papers are not always around. It creates obstruction in reaching their goals. ‘Total Fitness 365’ has been created to remove all these hassles and make everything simple for both the manager/owner and the clients.</p>
 <p>The idea of my project is to digitalize the relationship and all the processes that happen between a gym owner/manager and its members. It will connect all the gyms with its respective members. The gym owner will handle the management and the client will track his fitness all under a single app.</p>
@@ -44,3 +45,4 @@
 <p><strong>SOCIAL IMPACT</strong></p>
 <p>The greater goal of my project is to create a healthy and fitter society. The biggest problem in achieving a fitter body is lack of consistency in maintaining a strict diet and routine. This is where ‘Total Fitness 365’ comes into play. With its constant reminders, it will be easier than ever to maintain a consistent diet and routine. People will be able to lead a more disciplined life and reach their goals faster. Staying fit will also help one cope with negative emotions like depression, stress and anxiety. Seeing such physical and mental improvements, more people will be motivated to join the gym. In this way, the app can play a significant role in improving the overall health and fitness of the society.</p>
 <p>&nbsp;</p>
+</div>
