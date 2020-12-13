@@ -68,5 +68,18 @@
    </style>
  </head>
  <body >
-   
+   <header>
+     <h1>Fitness365</h1>
+   </header>
+
+   <form action="redirect.php" method="post">
+     <label class="box" >ID: <input type="text" name="id"></label></br>
+     <label class="box">Password: <input type="password" name="password"></label></br>
+     <label class="box">Type: <select name="type">
+       <option value="user">User</option>
+       <option value="admin">Admin</option>
+     </select></label>
+     </br>
+     <label id="login"><input type="submit" name="login" value="Login"></label></form>
+   </body>
    </html>
