@@ -37,7 +37,21 @@
   <label>Phone:  <input name="user_phone" required></label><br/>
   <label> Address: <input type="text" name="user_address"></label><br/>
   <label>Age: <input name="user_age"></label><br/>
-
+   Gender:
+  <label><input type="radio" name="user_gender" value="Male">Male</label>
+  <label><input type="radio" name="user_gender" value="Female">Female</label>
+    <label><input type="radio" name="user_gender" value="Other">Other</label> <br/>
+  <label> Join Date: <input type="date" name="join_date" required></label><br/>
+	Package ID: <select name="package_id">
+  <option value="7" >Weekly</option><br/>
+  <option value="30" selected >Monthly</option><br/>
+  <option value="180" >Half-Yearly</option><br/>
+  <option value="365" >Yearly</option><br/>
+</select><br/>
+User Type: <select name="user_type">
+	<option value="user">User</option>
+	<option value="admin">Admin</option>
+</select><br/>
 
 
  <button type="submit" name="submit">Submit</button><br/>
