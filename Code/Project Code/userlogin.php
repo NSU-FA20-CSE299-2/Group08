@@ -75,6 +75,7 @@
    <form action="redirect.php" method="post">
      <label class="box" >ID: <input type="text" name="id"></label></br>
      <label class="box">Password: <input type="password" name="password"></label></br>
+      <label class="box">Gym name: <input type="text" name="gymname"></label></br> <!-- new addition-->
      <label class="box">Type: <select name="type">
        <option value="user">User</option>
        <option value="admin">Admin</option>
