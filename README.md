@@ -35,9 +35,9 @@
 <p>&nbsp;</p>
 <p><strong>TECHNOLOGY</strong></p>
 <p><em>Frontend</em></p>
-<p>I will use Flutter for the frontend because of its multi-platform portability. With a single codebase the app will be able to run smoothly on both android and iOS.</p>
+<p>I will use HTML,CSS and JavaScript for the frontend.</p>
 <p><em>Backend</em></p>
-<p>I will use firebase for the backend because of its fast MVP, scalability and other built-in integrations.</p>
+<p>I will use PHP and MySQL for the backend.</p>
 <p>&nbsp;</p>
 <p><strong>MONETIZATION</strong></p>
 <p>The target customers for the app are gym owners and its clients. There will be separate subscription plans for the owners and the clients. The owners will use it for management ease and the clients for fitness purpose. Total revenue will be generated from those subscription plans.</p>
