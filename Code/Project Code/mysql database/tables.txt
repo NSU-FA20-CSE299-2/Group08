@@ -4,7 +4,19 @@ create table membership_packages(
     package_amount int(7),
     package_name varchar(15),
     gymname varchar(30),
-    PRIMARY key(package_id,gymname)
-  
+    PRIMARY key(package_id,gymname)  
+);
 
+//Table 2:
+create table trainer(
+	trainer_id int(3),
+    gymname varchar(30),
+    trainer_name varchar(30),
+    trainer_email varchar(25) UNIQUE,
+    trainer_phone varchar(15),
+    trainer_address varchar(50),
+    trainer_gender varchar(8),
+    trainer_salary int(7),
+    hire_date date,
+    PRIMARY key(trainer_id,gymname)
 );
