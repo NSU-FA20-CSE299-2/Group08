@@ -1,0 +1,8 @@
+//Table 1:
+create table membership_packages(
+	package_id int(4),
+    package_amount int(7),
+    package_name varchar(15),
+    PRIMARY key(package_id)
+
+);
