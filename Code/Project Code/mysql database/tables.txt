@@ -20,3 +20,25 @@ create table trainer(
     hire_date date,
     PRIMARY key(trainer_id,gymname)
 );
+
+//Table 3:
+CREATE table user_info(
+	
+    user_id int(7),
+    user_name varchar(25),
+    gymname varchar(30),
+    instructor_id int(3),
+    user_email varchar(25),
+    user_phone varchar(15),
+    user_address varchar(30),
+    user_age int(3),
+    user_gender varchar(8),
+    join_date date,
+    package_id int(4),
+    user_password varchar(15),
+    user_type varchar(5),
+    PRIMARY key(user_id,gymname),
+    FOREIGN key (instructor_id) REFERENCES trainer(trainer_id),
+    FOREIGN key(package_id) REFERENCES membership_packages(package_id)
+
+);
