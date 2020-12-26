@@ -6,6 +6,29 @@ create table membership_packages(
     gymname varchar(30),
     PRIMARY key(package_id,gymname)  
 );
+//table 1 modded to:
+create table subscriptions(
+	id int,
+    user_type varchar(10),
+    name varchar(20),
+    amount int,
+    PRIMARY key(id,user_type)
+
+
+);
+//table 2 new:
+
+CREATE table gyms(
+	gymname varchar(30),
+    password varchar(20) UNIQUE,
+    join_date date,
+    package_id int,
+    user_type varchar(10),
+    PRIMARY key(gymname),
+    FOREIGN KEY (package_id,user_type) REFERENCES subscriptions(id,user_type)
+);
+
+//Change the lower ones
 
 //Table 2:
 create table trainer(
