@@ -1,12 +1,4 @@
-//Table 1:
-create table membership_packages(
-	package_id int(4),
-    package_amount int(7),
-    package_name varchar(15),
-    gymname varchar(30),
-    PRIMARY key(package_id,gymname)  
-);
-//table 1 modded to:
+//table 1:
 create table subscriptions(
 	id int,
     user_type varchar(10),
@@ -28,9 +20,8 @@ CREATE table gyms(
     FOREIGN KEY (package_id,user_type) REFERENCES subscriptions(id,user_type)
 );
 
-//Change the lower ones
 
-//Table 2:
+//Table 3:
 create table trainer(
 	trainer_id int(3),
     gymname varchar(30),
@@ -41,14 +32,16 @@ create table trainer(
     trainer_gender varchar(8),
     trainer_salary int(7),
     hire_date date,
-    PRIMARY key(trainer_id,gymname)
+    PRIMARY key(trainer_id,gymname),
+    FOREIGN key (gymname) REFERENCES gyms(gymname)
 );
 
-//Table 3:
+//Table 4:
 CREATE table user_info(
 	
     user_id int(7),
     user_name varchar(25),
+    user_password varchar(15),
     gymname varchar(30),
     instructor_id int(3),
     user_email varchar(25),
@@ -58,10 +51,10 @@ CREATE table user_info(
     user_gender varchar(8),
     join_date date,
     package_id int(4),
-    user_password varchar(15),
-    user_type varchar(5),
+    user_type varchar(10),
     PRIMARY key(user_id,gymname),
     FOREIGN key (instructor_id) REFERENCES trainer(trainer_id),
-    FOREIGN key(package_id) REFERENCES membership_packages(package_id)
+    FOREIGN key(package_id,user_type) REFERENCES subscriptions(id,user_type),
+    FOREIGN key (gymname) REFERENCES gyms(gymname)
 
 );
