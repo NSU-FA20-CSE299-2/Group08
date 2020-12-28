@@ -58,3 +58,28 @@ CREATE table user_info(
     FOREIGN key (gymname) REFERENCES gyms(gymname)
 
 );
+
+//Table 5:
+
+CREATE table total_userroutine(
+    user_id int(7),
+    gymname varchar(30),
+    day varchar(30),
+    exercise varchar(30),
+    sets int,
+    reps int,
+    PRIMARY key(user_id,gymname,day,exercise),
+    FOREIGN key(user_id,gymname) REFERENCES user_info(user_id,gymname)
+);
+
+//Table 6: 
+CREATE table totaluser_dietchart(
+    user_id int(7),
+    gymname varchar(30),
+    day varchar(30),
+    meal_no int,
+    meal_details varchar(100),
+    PRIMARY key(user_id,gymname,day,meal_no),
+    FOREIGN key(user_id,gymname) REFERENCES user_info(user_id,gymname)
+
+);
