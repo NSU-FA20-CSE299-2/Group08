@@ -1,0 +1,142 @@
+/*Page User Index */
+body{
+  color:white;
+  background-image:  url("background2.jpg");
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size:cover;
+ padding:3%;
+ margin: 1%;
+ font-family: "Lucida Console" ;
+}
+header{
+  padding: 2%;
+  color: White;
+  background-color:rgba(26, 82, 118,.2);
+  text-align: center;
+}
+nav{
+  text-align: center;
+}
+nav a{
+  font-weight: bold;
+
+  background-color: RGBA(33, 47, 60,.9);
+  font-family: Arial;
+  display:inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  height: 1%;
+  width:190px;
+  margin: 1%;
+  padding: 1%;
+}
+  a:link{
+    color:orange;
+  }
+  a:visited{
+    color:orange;
+  }
+  a:hover{
+    color:rgb(255, 87, 51);
+  }
+
+div{
+  background-color: rgba(26, 82, 118,.2);
+   display: inline-block;
+   text-decoration:none;
+   height: 150px;
+   width: 200px;
+   border-radius: 30px;
+   position: relative;
+   margin:2%;
+     text-align: center;
+     padding-top: 5%;
+
+}
+div a{
+  text-decoration:underline;
+  padding-top: 2%;
+  font-weight: bold;
+
+}
+
+.left{
+  display:inline-block;
+  background-color: RGBA(192, 192, 192,.0);
+  line-height: 2;
+ width: 16%;
+ height: 100%;
+}
+.left a{
+  display: block;
+}
+.right{
+    text-align: center;
+  display: inline-block;
+background-color: rgba(26, 82, 118,.0);
+width: 83%;
+float:right;
+margin-left: 1px;
+}
+label input{
+
+background-color:rgba(127, 140, 141,.3);
+color: rgba(203, 67, 53);
+}
+button:hover{
+  background-color:rgba(203, 67, 53);
+}
+#adminlogout{
+  color: rgba(203, 67, 53);
+}
+table{
+  margin: auto;
+  width: 85%;
+  height: 48vh;
+  font-size:100% ;
+  line-height: 1.6;
+  font-family: "Lucida Console" ;
+  font-weight: normal;
+}
+table th{
+  padding-top:2%;
+  padding-bottom: 2%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-color:rgba(26, 82, 118,.1.5);
+    border-bottom-style: solid;
+  border-bottom-width: thick;
+  background-color:rgba(26, 82, 118,.6);
+  font-style:normal;}
+  tr{
+    padding-top:2%;
+    padding-bottom: 2%;
+  text-align: center;
+  background: rgba(217, 217, 217,.9);
+  opacity: .8;
+}
+tr:hover{
+  opacity: 1;
+  background: rgba(217, 217, 217,1.5);
+
+
+
+}
+td{
+  padding-top:2%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  color:black;
+  background-color:inherit ;
+  border-radius:2px;
+}
+/* Workout Routine*/
+.tdpaid{
+  background-color: rgb(88, 214, 141) ;
+
+}
+.tdunpaid{
+  background-color: rgb(236, 112, 99);
+}
