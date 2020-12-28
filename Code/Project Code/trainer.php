@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Trainer Reg. </title>
+<!--
 	<link rel="stylesheet" href="css/admindesign.css">
 	<style>
 	body{
@@ -23,7 +24,7 @@
 	input{
 		background-color: rgb(236, 112, 99);
 
-	}
+	}-->
 	</style>
 </head>
 <body>
