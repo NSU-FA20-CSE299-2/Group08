@@ -83,3 +83,15 @@ CREATE table totaluser_dietchart(
     FOREIGN key(user_id,gymname) REFERENCES user_info(user_id,gymname)
 
 );
+
+//Table 7:  needs to be modified
+create table user_payment(
+	payment_id int primary key,
+	user_id int(7),
+	
+	payment_date date,
+	activated_till date,
+	amount int,
+	foreign key(user_id) references user_info(user_id),
+	);
+	
