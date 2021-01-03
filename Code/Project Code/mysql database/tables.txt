@@ -95,3 +95,13 @@ create table user_payment(
 	foreign key(user_id) references user_info(user_id),
 	);
 	
+//Table 8: needs to be modified
+CREATE TABLE `transactions` (
+  `ofdate` varchar(11) NOT NULL,
+  `income` int(7) DEFAULT NULL,
+  `salary_paid` int(7) DEFAULT NULL,
+  `elec_bill` int(5) DEFAULT NULL,
+  `machine_maint` int(5) DEFAULT NULL,
+  `other_bill` int(7) DEFAULT NULL,
+  `net` int(7) DEFAULT NULL
+)
