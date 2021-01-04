@@ -27,4 +27,28 @@ if($get)
       echo '<script>alert("Sorry! wrong user id or password");
       window.location.href="userlogin.php";
       </script>';//'<script>alert("doesnt match");</script>';
-    }} 
+    }}
+    else {
+  echo '<script>alert("wrong information");
+  window.location.href="userlogin.php";
+  </script>';
+
+}
+
+  }
+    else if($type=='admin')
+    {
+      $sql="select * from admin where admin_id='$id' and admin_password='$password' and admin_type='$type' ";
+      $get=mysqli_query($conn,$sql);
+      if($get)
+      {
+           $row=mysqli_fetch_assoc($get);
+           echo $row['admin_name'];//inside admin table
+           echo $row['admin_password'];
+           echo $row['admin_type'];
+          if(($id==$row['admin_id'])&&($password==$row['admin_password']&&($type==$row['admin_type'])))
+          {
+            echo '<script>alert("Welcome  Admin!");
+            window.location.href="admin_index.php?id='.$row['admin_id'].'";
+            </script>';
+          }
