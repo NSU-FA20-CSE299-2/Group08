@@ -51,4 +51,23 @@ if($get)
             echo '<script>alert("Welcome  Admin!");
             window.location.href="admin_index.php?id='.$row['admin_id'].'";
             </script>';
-          }
+          }else {
+            echo '<script>alert("wrong id or password");
+            window.location.href="userlogin.php";
+            </script>';//'<script>alert("doesnt match");</script>';
+          }}
+          else {
+            echo '<script>alert("wrong information");
+            window.location.href="userlogin.php";
+            </script>';
+          }}
+
+
+
+
+}
+else
+{
+  echo "not going in isset";
+}
+ ?>
