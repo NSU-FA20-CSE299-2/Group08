@@ -26,3 +26,25 @@ $row=mysqli_fetch_assoc($get);
     <nav>
     <a href="user_payment.php">Take Payment</a>
     <a href="view_paymentstatus.php">
+    All Payment Records</a>
+      <a href="pay_otherbill.php?id='.$row['admin_id'].'"> Pay other bills</a>
+      <a href="edit_admin.php?id='.$row['admin_id'].'">EDIT admin</a><nav></header>
+
+      <aside class="left">
+
+        <a href="user_reg.php">Add User</a>
+        <a href="trainer.php">Add trainer</a>
+        <a href="membership_packages.php"> Packages</a>
+        <a href="measurement.php">Take Body Measurement</a>
+        </aside>
+        <main class="right">
+        <div>
+        <a href="totaluser_dietchart.php">Set Diet Chart</a></div>
+        <div><a href="total_userroutine.php">Set Routine</a></div>
+        <div><a href="viewall_bodymeasurement.php">User Body Status</a></div>
+        <div><a href="viewall_userinfo.php">View All User Data</a></div></main>
+
+
+
+      <footer>
+      
