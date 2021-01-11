@@ -36,3 +36,31 @@ if(mysqli_num_rows($view)>0)
     </tr>';
 while($row=mysqli_fetch_assoc($view))
 {
+  echo '<tr>
+        <td>'.$row['user_id'].'</td>
+        <td>'.$row['user_name'].'</td>
+        <td>'.$row['trainer_name'].'</td>
+        <td>'.$row['user_email'].'</td>
+        <td>'.$row['user_phone'].'</td>
+        <td>'.$row['user_address'].'</td>
+        <td>'.$row['user_age'].'</td>
+        <td>'.$row['user_gender'].'</td>
+        <td>'.$row['join_date'].'</td>
+        <td>'.$row['package_name'].'</td></tr>';
+
+
+
+}
+
+
+
+}
+else {
+  echo "nothing found";
+}
+
+
+
+ ?>
+  </body>
+</html>
