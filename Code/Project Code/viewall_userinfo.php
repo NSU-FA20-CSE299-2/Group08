@@ -20,3 +20,19 @@
 require 'connection.php';
 $sql="SELECT a.user_id,a.user_name,b.trainer_name,a.user_email,a.user_phone,a.user_address,a.user_age,a.user_gender,a.join_date,c.package_name from user_info a INNER JOIN trainer b ON a.instructor_id=b.trainer_id INNER JOIN membership_packages c ON a.package_id=c.package_id";
 $view=mysqli_query($conn,$sql);
+if(mysqli_num_rows($view)>0)
+{
+  echo  '<table>
+    <tr> <th> User ID </th>
+            <th> Name</th>
+            <th> Instructor Name </th>
+            <th>Email</th>
+            <th> Phone</th>
+            <th> Address </th>
+            <th> Age </th>
+            <th>Gender</th>
+            <th>Join Date</th>
+            <th>Package Type</th>
+    </tr>';
+while($row=mysqli_fetch_assoc($view))
+{
