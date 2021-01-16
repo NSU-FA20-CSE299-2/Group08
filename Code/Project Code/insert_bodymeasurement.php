@@ -24,3 +24,40 @@ else {
 }
 $lean_bm=$weight-($weight*($body_fat/100));
 //insert body status based on bmi
+if($bmi<18.5)
+  {
+     $status="Underweight";
+  }
+  else if(($bmi>=18.50)&&($bmi<=24.99))
+  {
+      $status="Good";
+  }
+  else if(($bmi>=25.00)&&($bmi<=29.99))
+  {
+      $status="Overweight";
+  }
+  else if($bmi>=30.00)
+  {
+      $status="Obese";
+  }
+  else {$status="N/A";}
+/*echo "bmi: ".$bmi;
+echo "body fat%: ".$body_fat;
+echo "lean mass kg: ".$lean_bm;
+echo "    height ".$height;
+echo "   status ".$status;*/
+$ssql2="insert into body_measurement(user_id,age,gender,height_m,weight_kg,bmi,body_fat_percent,lean_mass_kg,measurement_date,body_status) values('$user_id','$user_age','$user_gender','$height','$weight','$bmi','$body_fat','$lean_bm','$meas_date','$status')
+ON DUPLICATE KEY UPDATE
+height_m='$height',weight_kg='$weight',bmi='$bmi',body_fat_percent='$body_fat',lean_mass_kg='$lean_bm',body_status='$status' ";
+$get_sql2=mysqli_query($conn,$ssql2);
+
+}
+else {
+  echo "contradicts ";
+}
+
+
+
+
+
+ ?>
