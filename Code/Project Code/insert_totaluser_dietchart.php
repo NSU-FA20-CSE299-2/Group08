@@ -13,3 +13,22 @@ $food_e=$_POST['food_e'];
 $food_d=!empty($food_d) ? "'$food_d'" : "NULL";
 $food_e=!empty($food_e) ? "'$food_e'" : "NULL";
 //^how to send null from php to mysql
+$sql="insert into totaluser_dietchart(user_id,meal_time,food_a,food_b,food_c,food_d,food_e) values('$user_id','$meal_time','$food_a','$food_b','$food_c',$food_d,$food_e)
+ON DUPLICATE KEY UPDATE
+food_a='$food_a',
+food_b='$food_b',
+food_c='$food_c',
+food_d=$food_d,
+food_e=$food_e ";
+$insert_totaluser_dietdata=mysqli_query($conn,$sql);
+if($insert_totaluser_dietdata)
+{
+  echo"inserted data";
+}
+else {
+  echo "error desc: ".mysqli_error($conn);
+}
+}
+else {
+echo "insertion failed";}
+ ?>
