@@ -74,3 +74,21 @@ button{
 	}
 	</style>
 </head>
+<body>
+ <form action="update_userprofile.php?id='.$row['user_id'].'" method="post">
+  <label>Name: <input type="text" name="user_name" value="'.$row['user_name'].'" required></label><br/>
+	<label>Password: <input type="password" name="user_password"
+  value="'.$row['user_password'].'" required></label><br/>
+  <label>Email: <input type="email" name="user_email" value="'.$row['user_email'].'" required></label><br/>
+  <label>Phone:  <input name="user_phone" value="'.$row['user_phone'].'" required></label><br/>
+  <label> Address: <input type="text" name="user_address" value="'.$row['user_address'].'"></label><br/>
+  <label>Age: <input name="user_age" value="'.$row['user_age'].'"></label><br/>
+   Gender:
+  <label class="gend" ><input type="radio" name="user_gender" value="Male" >Male</label>
+  <label class="gend"><input type="radio" name="user_gender" value="Female">Female</label>
+    <label class="gend"><input type="radio" name="user_gender" value="Other">Other</label> <br/>
+
+ <button type="submit" name="submit">Submit</button><br/>
+</form>
+</body>
+</html>'; ?>
