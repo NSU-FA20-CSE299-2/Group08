@@ -46,3 +46,16 @@ machine_maint=$machine_maint,
 other_bill=$other_bill,
 net=$net_income ";
 $insertd=mysqli_query($conn,$sql2);
+if($insertd)
+{
+  echo '<script></script>';
+}
+else
+{
+  echo "coudnt insert into transacitons".mysqli_error($conn);
+}
+//view query of transaction table
+$sql3="select *from transactions where ofdate like '_____$monthnew%' ";
+$viewd=mysqli_query($conn,$sql3);
+if(mysqli_num_rows($viewd)>0)
+{
