@@ -17,3 +17,27 @@ if($insert_data)
   echo "success";
 
 }
+
+else {
+  echo "in loop error: ".mysqli_error($conn);
+}
+}
+
+else if (isset($_POST['user_id'])) {
+  $quick_id=$_POST['user_id'];
+  $check=mysqli_query($conn,"select *from user_payment where user_id=$quick_id order by activated_till desc");
+  if(mysqli_num_rows($check)>0)
+  {
+    echo  '
+<head>
+<link rel="stylesheet" href="css/admindesign.css">
+</head>
+    <table>
+    <tr> <th> Payment ID </th>
+            <th> User ID</th>
+            <th> Package ID </th>
+            <th> Payment Date</th>
+            <th> Activated Till </th>
+            <th> Amount </th>
+            <th> Current Status </th>
+    </tr>';
