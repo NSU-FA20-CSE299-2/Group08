@@ -17,3 +17,16 @@ echo  '
           <th> Food D</th>
           <th> Food E</th>
   </tr>';
+  while($row=mysqli_fetch_assoc($get))
+{
+
+    echo '<tr>
+            <td>'.$row['meal_time'].'</td>
+            <td>'.$row['food_a'].'</td>
+            <td>'.$row['food_b'].'</td>
+            <td>'.$row['food_c'].'</td>
+              <td>'.$row['food_d'].'</td>
+                <td>'.$row['food_e'].'</td>
+                   ';
+}
+ ?>
