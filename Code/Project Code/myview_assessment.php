@@ -35,3 +35,24 @@ if(mysqli_num_rows($get1)>0)
       $lmc=$lean_mass1-$lean_mass2;
       ?>
       <html>
+      <head><title>My Assessment</title>
+        <link rel="stylesheet" href="css/design.css">
+
+      </head>
+      <body>
+        <h1>Body Changes: </h1>
+        <div class="my_asmnt"><?php
+         if($weightchange>0)
+         {
+           echo '<ul><li>Weight has increased by </span>'.$weightchange.' kgs </span></li>';
+         }
+         else {
+            echo '<ul><li>Weight has decreased by <span>'.$weightchange.' kgs</span> </li>';
+         }
+         echo '<li> Change of BMI: '.$bmichange.' and current BMI status is: <span class="bmi" id="spanbmi">'.$status1.'</span></li>
+         <li> Change of Height: <span>'.$heightchange.'m</span></li>
+         <li> Change of Body Fat:<span> '.$bfc.' %</span></li>
+         <li> Change of Lean Mass: <span>'.$lmc.' kg</span></li></ul>
+        </div>
+        <body>';
+      }
