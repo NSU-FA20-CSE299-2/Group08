@@ -13,3 +13,21 @@
     <h1>User Body Status</h1>
 <?php
 require 'connection.php';
+$view=mysqli_query($conn,"select * from body_measurement");
+if(mysqli_num_rows($view)>0)
+{
+  echo  '<table>
+    <tr> <th> User ID </th>
+            <th> Age</th>
+            <th> Gender </th>
+            <th>Height (m)</th>
+            <th> Weight (kg)</th>
+            <th> BMI </th>
+            <th> Fat (%) </th>
+            <th>Lean Mass (kg)</th>
+            <th>Measured Date</th>
+            <th>Status</th>
+    </tr>';
+while($row=mysqli_fetch_assoc($view))
+{
+echo '<tr>
