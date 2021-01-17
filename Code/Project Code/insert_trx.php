@@ -59,3 +59,31 @@ $sql3="select *from transactions where ofdate like '_____$monthnew%' ";
 $viewd=mysqli_query($conn,$sql3);
 if(mysqli_num_rows($viewd)>0)
 {
+  echo  '<table>
+      <tr> <th> Date </th>
+              <th> Income</th>
+              <th> Salary Paid </th>
+              <th> Electricity Bill</th>
+              <th> Machine Maintenance</th>
+              <th> Other Bill </th>
+              <th> Net Income </th>
+      </tr>';
+while($row2=mysqli_fetch_assoc($viewd))
+{
+  echo '<tr>
+          <td>'.$row2['ofdate'].'</td>
+          <td>'.$row2['income'].'</td>
+          <td>'.$row2['salary_paid'].'</td>
+          <td>'.$row2['elec_bill'].'</td>
+          <td>'.$row2['machine_maint'].'</td>
+          <td>'.$row2['other_bill'].'</td>
+          <td>'.$row2['net'].'</td>';
+}
+}
+}
+else {
+  echo "error: ";
+}
+ ?>
+</body>
+</html>
