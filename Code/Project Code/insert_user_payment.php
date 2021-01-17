@@ -64,3 +64,13 @@ else if (isset($_POST['user_id'])) {
     }
 }
   }
+  else {
+  echo '
+  <script>
+  alert("No records found");
+  window.location.href="admin_index.php";
+  </script>';
+}
+}
+
+ ?>
