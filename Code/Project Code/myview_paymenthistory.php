@@ -14,4 +14,27 @@ echo  '
           <th>Current Status</th>
 
   </tr>';
-  
+  while($row=mysqli_fetch_assoc($get))
+{
+
+    echo '<tr>
+            <td>'.$row['payment_id'].'</td>
+            <td>'.$row['payment_date'].'</td>
+            <td>'.$row['activated_till'].'</td>
+            <td>'.$row['package_name'].'</td>
+              <td>'.$row['amount'].'</td>';
+              $current_date=date('Y-m-d');
+              $activated_till=$row['activated_till'];
+              $diff=date_diff(date_create($current_date),date_create($activated_till));
+              $diff=$diff->format("%R%a");
+              $number=(int)$diff;
+              if($number>0)
+              {
+               echo '<td class="tdpaid">ACTIVE</td></tr>';
+              }
+              else {
+               echo '<td class="tdunpaid">EXPIRED</td></tr>';
+              }
+
+}
+ ?>
