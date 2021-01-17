@@ -56,3 +56,28 @@ if(mysqli_num_rows($get1)>0)
         </div>
         <body>';
       }
+      else {
+           //echo 'only one data '."<br/>";
+           echo  '
+<head><link rel="stylesheet" href="css/admindesign.css"></head>
+           <table>
+           <tr> <th> Measured Date</th>
+                   <th>Height (m)</th>
+                   <th> Weight (kg) </th>
+                   <th> BMI</th>
+                   <th> Body Fat (%)</th>
+                   <th> Lean Mass (kg) </th>
+                   <th> Body Status </th>
+           </tr>
+           <tr>
+                   <td>'.$row1['measurement_date'].'</td>
+                   <td>'.$row1['height_m'].'</td>
+                   <td>'.$row1['weight_kg'].'</td>
+                   <td>'.$row1['bmi'].'</td>
+                     <td>'.$row1['body_fat_percent'].'</td>
+                       <td>'.$row1['lean_mass_kg'].'</td>
+                       <td>'.$row1['body_status'].'</td></tr></table>
+
+                         ';
+
+       }
