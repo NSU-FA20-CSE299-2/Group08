@@ -32,3 +32,17 @@ else{
   $elec_bill=0;
   $machine_maint=0;
   $other_bill=0;
+
+}
+//calculations:
+$net_income=$income-($salary_paid+$elec_bill+$machine_maint+$other_bill);
+//insertion query into transactions
+$sql2="insert into transactions(ofdate,income,salary_paid,elec_bill,machine_maint,other_bill,net) values('$month','$income','$salary_paid','$elec_bill','$machine_maint','$other_bill','$net_income')
+on DUPLICATE key UPDATE
+income=$income,
+salary_paid=$salary_paid,
+elec_bill=$elec_bill,
+machine_maint=$machine_maint,
+other_bill=$other_bill,
+net=$net_income ";
+$insertd=mysqli_query($conn,$sql2);
