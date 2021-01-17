@@ -1,0 +1,146 @@
+/*Page User Index */
+body{
+  color:white;
+  background-image:  url("background2.jpg");
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size:cover;
+ padding:2%;
+}
+ #userindex{
+margin:4%;
+padding: 2%;
+}
+h1{
+  font-family: "Lucida Console",Arial;
+  font-size:large;
+    font-display: block;
+    font-weight: bold;
+    color:rgb(255, 87, 51);
+    position: relative;
+    left: 22px;
+
+}
+.UI{
+ background-color: rgba(26, 82, 118,.2);
+  display: inline-block;
+  text-decoration:none;
+  height: 150px;
+  width: 180px;
+  border-radius: 30px;
+  position: relative;
+  margin:2%;
+}
+.UI:hover{
+  background-color:rgba(26, 82, 118,.6);
+  border-color: rgba(26, 82, 118,.4);
+  color:rgb(255, 87, 51);
+
+}
+a{font-family: "Lucida Console",Arial;
+font-size:large;
+  font-display: block;
+  font-weight: bold;
+  text-decoration:underline;
+  display: block;
+  position: absolute;
+  margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+    #logout a{
+      color:rgb(123, 36, 28);
+    }
+
+}
+a:link{
+  color:orange;
+}
+a:visited{
+  color:orange;
+}
+a:hover{
+  color:rgb(255, 87, 51);
+}
+/*Page User Index ends^ */
+
+/* Workout Routine*/
+
+table{
+  margin: auto;
+  width: 85%;
+  height: 48vh;
+  font-size:100% ;
+  line-height: 1.6;
+  font-family: "Lucida Console" ;
+  font-weight: normal;
+}
+table th{
+  padding-top:2%;
+  padding-bottom: 2%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-color:rgba(26, 82, 118,.1.5);
+    border-bottom-style: solid;
+  border-bottom-width: thick;
+  background-color:rgba(26, 82, 118,.6);
+  font-style:normal;}
+  tr{
+    padding-top:2%;
+    padding-bottom: 2%;
+  text-align: center;
+  background: rgba(217, 217, 217,.9);
+  opacity: .8;
+}
+tr:hover{
+  opacity: 1;
+  background: rgba(217, 217, 217,1.5);
+
+
+
+}
+td{
+  padding-top:2%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  color:black;
+  background-color:inherit ;
+  border-radius:2px;
+}
+/* Workout Routine*/
+.tdpaid{
+  background-color: rgb(88, 214, 141) ;
+
+}
+.tdunpaid{
+  background-color: rgb(236, 112, 99);
+}
+/* assessment*/
+.my_asmnt{
+  font-family: "Lucida Console";
+  margin: 3%;
+  padding:3%;
+  font-size: 120%;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.5;
+
+  background-color:rgba(44, 62, 80,.7) ;
+  color:rgba(243, 156, 18,);
+}
+span{
+  color:rgba(243, 156, 18);
+}
+#edit{
+  display: inline-block;
+  position: relative;
+  font-size: 170%;
+}
+#editdiv{
+
+  position: absolute;
+  right:139px;
+  bottom:-280px;
+}
