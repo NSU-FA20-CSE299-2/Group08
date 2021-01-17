@@ -27,7 +27,7 @@
 	</style>
 </head>
 <body>
-  <h1> Take User Body Measurement </h1>
+ <h1> Take User Body Measurement </h1>
  <form action="insert_bodymeasurement.php" method="post">
   <label>User ID: <input name="user_id" required></label><br/>
   Height:<br/>

@@ -10,6 +10,8 @@ echo  '
 </head>
 <title>Workout Routine</title>
 <body>
+
+
 <table>
   <tr> <th> Day </th>
           <th> Exercise 1</th>

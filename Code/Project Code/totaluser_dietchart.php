@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Diet Chart set </title>
 	<link rel="stylesheet" href="css/admindesign.css">
-	<!-- <style>
+	<style>
 	body{
 		margin:5%;
 		padding:4%;
@@ -22,7 +22,7 @@
 	button{
 		height:30px;
 	}
-</style> -->
+	</style>
 </head>
 <body>
  <h1> Set Diet Chart</h1>

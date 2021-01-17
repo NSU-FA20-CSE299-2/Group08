@@ -14,7 +14,7 @@ echo  '
           <th>Current Status</th>
 
   </tr>';
-  while($row=mysqli_fetch_assoc($get))
+while($row=mysqli_fetch_assoc($get))
 {
 
     echo '<tr>

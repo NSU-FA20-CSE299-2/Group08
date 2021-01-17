@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!--
 	<title>User Reg. </title>
 	<link rel="stylesheet" href="css/admindesign.css">
 	<style>
@@ -25,7 +24,7 @@
 		background-color: rgb(236, 112, 99);
 
 	}
-</style> -->
+	</style>
 </head>
 <body>
  <h1> Register User</h1>
@@ -42,7 +41,6 @@
   <label><input type="radio" name="user_gender" value="Male">Male</label>
   <label><input type="radio" name="user_gender" value="Female">Female</label>
     <label><input type="radio" name="user_gender" value="Other">Other</label> <br/>
-		<label>Gym name: <input type="text" name="gymname" required></label><br/>
   <label> Join Date: <input type="date" name="join_date" required></label><br/>
 	Package ID: <select name="package_id">
   <option value="7" >Weekly</option><br/>

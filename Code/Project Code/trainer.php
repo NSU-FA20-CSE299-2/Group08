@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Trainer Reg. </title>
-<!--
 	<link rel="stylesheet" href="css/admindesign.css">
 	<style>
 	body{
@@ -24,7 +23,7 @@
 	input{
 		background-color: rgb(236, 112, 99);
 
-	}-->
+	}
 	</style>
 </head>
 <body>
@@ -32,7 +31,6 @@
  <form action="insert_trainer.php" method="post">
   <label>Trainer ID: <input name="trainer_id" required></label><br/>
   <label>Name: <input type="text" name="trainer_name" required></label><br/>
-		<label>Gym name: <input type="text" name="gymname" required></label><br/>
   <label>Email: <input type="email" name="trainer_email" required></label><br/>
   <label>Phone:  <input name="trainer_phone" required></label><br/>
   <label> Address: <input type="text" name="trainer_address"></label><br/>

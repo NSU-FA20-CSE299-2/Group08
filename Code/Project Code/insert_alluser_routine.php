@@ -22,17 +22,17 @@ exc_name_4=$exc_name_4,
 exc_name_5=$exc_name_5,
 sets='$sets',
 reps='$reps'  ";
-$insert_all_routine=mysqli_query($conn,$sql);
-if($insert_all_routine)
-{
-  echo "success";
-}
-else {
-  echo "error in loop: ".mysqli_error($conn);
-}
+  $insert_all_routine=mysqli_query($conn,$sql);
+  if($insert_all_routine)
+  {
+    echo "success";
+  }
+  else {
+    echo "error in loop: ".mysqli_error($conn);
+  }
 }
 else
 {
-echo "failed to insert";
+  echo "failed to insert";
 }
-?>
+ ?>

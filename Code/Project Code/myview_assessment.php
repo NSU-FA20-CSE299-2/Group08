@@ -14,6 +14,7 @@ if(mysqli_num_rows($get1)>0)
     $lean_mass1=$row1['lean_mass_kg'];
     $mdate1=$row1['measurement_date'];
     $status1=$row1['body_status'];
+
     $get2=mysqli_query($conn,"select * from body_measurement where user_id=$user_id order by measurement_date desc limit 1,1");
     if(mysqli_num_rows($get2)>0)
     {
@@ -56,53 +57,55 @@ if(mysqli_num_rows($get1)>0)
         </div>
         <body>';
       }
-      else {
-           //echo 'only one data '."<br/>";
-           echo  '
+          else {
+            //echo 'only one data '."<br/>";
+            echo  '
 <head><link rel="stylesheet" href="css/admindesign.css"></head>
-           <table>
-           <tr> <th> Measured Date</th>
-                   <th>Height (m)</th>
-                   <th> Weight (kg) </th>
-                   <th> BMI</th>
-                   <th> Body Fat (%)</th>
-                   <th> Lean Mass (kg) </th>
-                   <th> Body Status </th>
-           </tr>
-           <tr>
-                   <td>'.$row1['measurement_date'].'</td>
-                   <td>'.$row1['height_m'].'</td>
-                   <td>'.$row1['weight_kg'].'</td>
-                   <td>'.$row1['bmi'].'</td>
-                     <td>'.$row1['body_fat_percent'].'</td>
-                       <td>'.$row1['lean_mass_kg'].'</td>
-                       <td>'.$row1['body_status'].'</td></tr></table>
+            <table>
+            <tr> <th> Measured Date</th>
+                    <th>Height (m)</th>
+                    <th> Weight (kg) </th>
+                    <th> BMI</th>
+                    <th> Body Fat (%)</th>
+                    <th> Lean Mass (kg) </th>
+                    <th> Body Status </th>
+            </tr>
+            <tr>
+                    <td>'.$row1['measurement_date'].'</td>
+                    <td>'.$row1['height_m'].'</td>
+                    <td>'.$row1['weight_kg'].'</td>
+                    <td>'.$row1['bmi'].'</td>
+                      <td>'.$row1['body_fat_percent'].'</td>
+                        <td>'.$row1['lean_mass_kg'].'</td>
+                        <td>'.$row1['body_status'].'</td></tr></table>
 
-                         ';
+                          ';
 
-       }
-       $remGood="Congratulations! Your body is in great condition. Keep up the hard work!";
-       $remUnderweight="You are weak. You need to eat more to gain strength and size. Consult your trainer for a better dietchart and routine. Work hard";
-       $remOverweight="You are slightly out of shape. You need to lose some weight to stay in ideal shape. Consult your trainer for some cardio advice";
-       $remObese="You are in terrible shape. Please stay consistent with your cutting routine and follow all the guidelines properly or soon you will face health complications";
-       switch($status1){
-      case "Underweight":
-      echo '<div class="my_asmnt">'.$remUnderweight.'
-      </div>';
+        }
+
+        $remGood="Congratulations! Your body is in great condition. Keep up the hard work!";
+        $remUnderweight="You are weak. You need to eat more to gain strength and size. Consult your trainer for a better dietchart and routine. Work hard";
+        $remOverweight="You are slightly out of shape. You need to lose some weight to stay in ideal shape. Consult your trainer for some cardio advice";
+        $remObese="You are in terrible shape. Please stay consistent with your cutting routine and follow all the guidelines properly or soon you will face health complications";
+
+      switch($status1){
+        case "Underweight":
+        echo '<div class="my_asmnt">'.$remUnderweight.'
+        </div>';
 
 
-           break;
-           case "Good":
-           echo '<div class="my_asmnt">'.$remGood.'
-           </div>';
+             break;
+             case "Good":
+             echo '<div class="my_asmnt">'.$remGood.'
+             </div>';
 
-                break;
-                case "Overweight":
-                echo '<div class="my_asmnt">'.$remOverweight.'
-                </div>';
+                  break;
+                  case "Overweight":
+                  echo '<div class="my_asmnt">'.$remOverweight.'
+                  </div>';
 
-                     break;
-                     case "Obese":
+                       break;
+                       case "Obese":
                        echo '<div class="my_asmnt">'.$remObese.'
                        </div>';
 

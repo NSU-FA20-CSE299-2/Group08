@@ -33,6 +33,7 @@ else{
   $machine_maint=0;
   $other_bill=0;
 
+
 }
 //calculations:
 $net_income=$income-($salary_paid+$elec_bill+$machine_maint+$other_bill);

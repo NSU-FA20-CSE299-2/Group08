@@ -31,23 +31,23 @@ if(mysqli_num_rows($view)>0)
 while($row=mysqli_fetch_assoc($view))
 {
 echo '<tr>
-<td>'.$row['user_id'].'</td>
-       <td>'.$row['age'].'</td>
-       <td>'.$row['gender'].'</td>
-       <td>'.$row['height_m'].'</td>
-       <td>'.$row['weight_kg'].'</td>
-       <td>'.$row['bmi'].'</td>
-       <td>'.$row['body_fat_percent'].'</td>
-       <td>'.$row['lean_mass_kg'].'</td>
-       <td>'.$row['measurement_date'].'</td>';
-       if($row['body_status']=="Good")
-       { echo '
-         <td style="background-color: rgb(88, 214, 141) ">'.$row['body_status'].'</td></tr>';
-       }
-       else { echo'
+        <td>'.$row['user_id'].'</td>
+        <td>'.$row['age'].'</td>
+        <td>'.$row['gender'].'</td>
+        <td>'.$row['height_m'].'</td>
+        <td>'.$row['weight_kg'].'</td>
+        <td>'.$row['bmi'].'</td>
+        <td>'.$row['body_fat_percent'].'</td>
+        <td>'.$row['lean_mass_kg'].'</td>
+        <td>'.$row['measurement_date'].'</td>';
+        if($row['body_status']=="Good")
+        { echo '
+          <td style="background-color: rgb(88, 214, 141) ">'.$row['body_status'].'</td></tr>';
+        }
+        else { echo'
 
 
-       <td style="background-color:rgb(236, 112, 99)">'.$row['body_status'].'</td></tr>';}
+        <td style="background-color:rgb(236, 112, 99)">'.$row['body_status'].'</td></tr>';}
 
 
 
@@ -57,11 +57,11 @@ echo '<tr>
 
 }
 else {
- echo "nothing found";
+  echo "nothing found";
 }
 
 
 
-?>
- </body>
+ ?>
+  </body>
 </html>

@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>User Workout Routine </title>
-	<!--
 <link rel="stylesheet" href="css/admindesign.css">
 <style>
 body{
@@ -23,7 +22,7 @@ select{
 button{
 	height:30px;
 }
-</style> -->
+</style>
 </head>
 <body>
  <h1> Set Routine</h1>

@@ -27,7 +27,7 @@
 		</style>
 </head>
 <body>
-  <h1> Edit Packages </h1>
+ <h1> Edit Packages </h1>
  <form action="insert_mem_pack.php" method="post">
     Package ID: <br/>
    <label> <input type="radio" name="package_id" value="7"> Weekly</label><br/>

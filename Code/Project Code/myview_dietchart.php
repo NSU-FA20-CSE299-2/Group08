@@ -17,7 +17,7 @@ echo  '
           <th> Food D</th>
           <th> Food E</th>
   </tr>';
-  while($row=mysqli_fetch_assoc($get))
+while($row=mysqli_fetch_assoc($get))
 {
 
     echo '<tr>

@@ -4,24 +4,23 @@
 	<meta charset="UTF-8">
 	<title>User Payment </title>
 	<link rel="stylesheet" href="css/admindesign.css">
-  <style>
-  body{
-    font-size:120%;
-  }
-  form{
-    line-height:3;
-  }
-  input{
-    padding: 7px;
-  }
-  button{
-    height:35px;
-  }
-  select{
-    padding: 7px;
-  }
-  </style>
-
+	<style>
+	body{
+		font-size:120%;
+	}
+	form{
+		line-height:3;
+	}
+	input{
+		padding: 7px;
+	}
+	button{
+		height:35px;
+	}
+	select{
+		padding: 7px;
+	}
+	</style>
 </head>
 <body style="margin: 5%">
  <h1> User Payment </h1>

@@ -15,7 +15,7 @@ $insert_data=mysqli_query($conn,$sql);
 if($insert_data)
 {
   echo "success";
-
+  
 }
 
 else {
@@ -64,7 +64,8 @@ else if (isset($_POST['user_id'])) {
     }
 }
   }
-  else {
+
+else {
   echo '
   <script>
   alert("No records found");

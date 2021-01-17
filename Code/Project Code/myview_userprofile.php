@@ -16,7 +16,8 @@ echo  '
 <table>
   <tr> <th>Fields </th>
           <th>Values </th>
-          </tr>
+
+  </tr>
    <tr><td>Id: </td>
         <td>'.$row['user_id'].'</td></tr>
         <tr><td>Name: </td>
