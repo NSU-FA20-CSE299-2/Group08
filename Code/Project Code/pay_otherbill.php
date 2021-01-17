@@ -23,3 +23,16 @@ echo '
 	}
 	</style>
 </head>
+<body style="margin:5%">
+ <h1> Pay Other Bills </h1>
+ <form  action="edit_paybills.php?id='.$admin_id.'" method="post">
+
+<label>Month: <input type="month" name="payment_date"><br/>
+  <label>Electricity Bill<input name="elec_bill"  required></label><br/>
+	<label>Machine Maintenance<input name="machine_maint" value="0"></label><br/>
+  <label>Other Bills<input name="other_bill" value="0"></label><br/>
+ <button type="submit" name="submit">Submit</button><br/>
+</form>
+</body>
+</html>'
+?>
