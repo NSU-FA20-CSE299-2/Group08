@@ -19,3 +19,16 @@ $salary_paid=$row['trainer_fees'];
 //new query to get values from other bills table
 $sqlob="select * from other_bills where payment_date like '_____$monthnew%' ";
 $getob=mysqli_query($conn,$sqlob);
+$rowob=mysqli_fetch_assoc($getob);
+if(mysqli_num_rows($getob)>0){
+$elec_bill=$rowob['elec_bills'];
+$machine_maint=$rowob['machine_maint'];
+$other_bill=$rowob['other_bill'];
+/*echo $elec_bill."<br/>";
+echo $machine_maint."<br/>";
+echo $other_bill."<br/>";*/}
+else{
+  echo "no bills record <br/>";
+  $elec_bill=0;
+  $machine_maint=0;
+  $other_bill=0;
