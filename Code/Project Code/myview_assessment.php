@@ -81,3 +81,7 @@ if(mysqli_num_rows($get1)>0)
                          ';
 
        }
+       $remGood="Congratulations! Your body is in great condition. Keep up the hard work!";
+       $remUnderweight="You are weak. You need to eat more to gain strength and size. Consult your trainer for a better dietchart and routine. Work hard";
+       $remOverweight="You are slightly out of shape. You need to lose some weight to stay in ideal shape. Consult your trainer for some cardio advice";
+       $remObese="You are in terrible shape. Please stay consistent with your cutting routine and follow all the guidelines properly or soon you will face health complications";
