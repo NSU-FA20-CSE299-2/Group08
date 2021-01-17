@@ -102,3 +102,35 @@ if(mysqli_num_rows($get1)>0)
                 </div>';
 
                      break;
+                     case "Obese":
+                       echo '<div class="my_asmnt">'.$remObese.'
+                       </div>';
+
+                            break;
+                            default:
+                            echo '<div class="my_asmnt">Keep Grinding!
+                            </div>';
+
+
+
+
+              }
+
+
+
+    }
+
+
+
+
+
+
+
+else
+{
+  echo "Body has not been measured yet";
+}
+
+
+
+ ?>
