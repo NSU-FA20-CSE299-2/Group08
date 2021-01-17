@@ -85,3 +85,20 @@ if(mysqli_num_rows($get1)>0)
        $remUnderweight="You are weak. You need to eat more to gain strength and size. Consult your trainer for a better dietchart and routine. Work hard";
        $remOverweight="You are slightly out of shape. You need to lose some weight to stay in ideal shape. Consult your trainer for some cardio advice";
        $remObese="You are in terrible shape. Please stay consistent with your cutting routine and follow all the guidelines properly or soon you will face health complications";
+       switch($status1){
+      case "Underweight":
+      echo '<div class="my_asmnt">'.$remUnderweight.'
+      </div>';
+
+
+           break;
+           case "Good":
+           echo '<div class="my_asmnt">'.$remGood.'
+           </div>';
+
+                break;
+                case "Overweight":
+                echo '<div class="my_asmnt">'.$remOverweight.'
+                </div>';
+
+                     break;
