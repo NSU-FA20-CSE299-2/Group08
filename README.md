@@ -44,32 +44,42 @@ There will be two types of login options. One for the manager and the other for 
 
 ### User Story
 ##### Use Case 1:
-The manager wants to know how many members are in shape:
-1.	He can click on ‘User Body Status’ and all the body measurement details of the users will appear. 
-2.	He can assign a new diet-chart to the members through ‘Set Diet Chart’ who are overweight or underweight. 
-3.	He can assign a new workout routine to the members who are overweight or underweight through ‘Set Routine’.
+The manager wants to know the past and current body status of all members:
+1.	He can click on ‘User Body Status’ and all the body measurement details of the users will appear.
+2.	He can assign a new diet-chart to the members through ‘Set Diet Chart’ who are overweight or underweight.
+3. He can assign a new workout routine to the members who are overweight or underweight through ‘Set Routine’.
+
+![wr](Documentation/images/measurements.jpg)
 
 ##### Use Case 2: 
-The manager wants to monitor the overall transactions of the gym:
-1.	He can check the entire payment history of all users or quick check certain users only.
-2.	He can check the monthly income and expenses which include trainer salary, electricity and other bills.
+The manager wants to find the current payment status of all members:
+1.	There are options for both checking the payment history of all users and quick checking certain users only.
+2.	If he wants to check the payment history of all users he can click ‘All Payment Records’.
+
+![wr](Documentation/images/payments.jpg)
 
 ##### Use Case 3
-The user lost his workout routine and diet-chart manual:
-1.	 He can login and view routine by clicking ‘Workout Routine’
+The user lost his physical copy of workout routine and diet-chart manual:
+1.	 He can login and view routine by clicking ‘Workout Routine’.
 2.	He can view diet-chart through ‘Diet-Chart’.
+
+![wr](Documentation/images/workout.jpg)
 
 ### Solution Description:
 The user will request files (queries) through browser. MySQL will return results from the database to the browser through php. The files will be rendered as html files by the browser.
+
+![wr](Documentation/images/backend.jpg)
 
 ### Tools and Resources
 HTML/ CSS/ Bootstrap
 PHP/ MySQL
 
+![wr](Documentation/images/tools.jpg)
 
 
 ### Challenge
-There will be technical challenges of  setting up algorithm for scheduled routines/ diet charts, etc.It will be difficult to maintain a cyclic routine in 7 day regime rather than based on days.  Apart from that there will be challenge on creating a user friendly design for both the manager and customer so that they do not face any complications in viewing and accessing informations. 
+There will be technical challenges of  setting up algorithm for scheduled routines/ diet charts, etc. Some changes need to be made to maintain a cyclic routine in a 7 day regime rather than the one based on day names i.e Sunday, Monday, etc. Certain changes in overall design patterns must be made to make the website more scalable. Apart from that there will be challenge on creating a user friendly design for both the manager and customer so that they do not face any complications in viewing and accessing informations.
+
 
 
 
