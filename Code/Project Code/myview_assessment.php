@@ -48,7 +48,8 @@ if(mysqli_num_rows($get1)>0)
            echo '<ul><li>Weight has increased by </span>'.$weightchange.' kgs </span></li>';
          }
          else {
-            echo '<ul><li>Weight has decreased by <span>'.$weightchange.' kgs</span> </li>';
+           $absweight=(-1)*$weightchange;
+            echo '<ul><li>Weight has decreased by <span>'.$absweight.' kgs</span> </li>';
          }
          echo '<li> Change of BMI: '.$bmichange.' and current BMI status is: <span class="bmi" id="spanbmi">'.$status1.'</span></li>
          <li> Change of Height: <span>'.$heightchange.'m</span></li>

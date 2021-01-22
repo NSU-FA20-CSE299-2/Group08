@@ -20,7 +20,8 @@ td:nth-child(2){
     <h1>All Payment Records</h1>
 <?php
 require 'connection.php';
-$view=mysqli_query($conn,"select * from user_payment");
+$view2=mysqli_query($conn,"select * from user_payment");
+$view=mysqli_query($conn," SELECT user_payment.payment_id,user_payment.user_id,user_payment.package_id,user_payment.payment_date,user_payment.activated_till,user_payment.amount from user_payment join (SELECT user_id,max(payment_date) as pd from user_payment GROUP by user_id) as t1 on t1.user_id=user_payment.user_id and t1.pd=user_payment.payment_date ORDER by user_payment.user_id asc ");
 if(mysqli_num_rows($view)>0)
 {
   echo  '<table>
