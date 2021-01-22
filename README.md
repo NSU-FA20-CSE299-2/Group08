@@ -1,10 +1,32 @@
-# Connect Fitness365
-### Introduction:
+<html><body><p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p align="center"><strong><img src="https://media.dhakatribune.com/uploads/2016/11/nsulogo.jpg" alt="" width="307" height="172" /></strong></p>
+<p align="center"><strong>North South University</strong></p>
+<p align="center">Department of Electrical &amp; Computer Engineering</p>
+<p align="center"><strong>Project Report</strong></p>
+<p align="center"><strong>Group No</strong>: 8</p>
+<p align="center"><strong>Fall 2020</strong></p>
+<p align="center"><strong>Project Name</strong>: Fitness 365</p>
+<p align="center"><strong>Course No</strong>: CSE 299 <strong>Sec</strong><strong>:</strong> 2</p>
+<p align="center"><strong>Faculty</strong>: Shaikh Shawon Arefin Shimon (Sas3)</p>
+<p align="center"><strong><u>Member </u></strong><u>:</u></p>
+<p align="center"><strong>Name</strong><strong>:</strong> Md.Jushraf Rahman Chowdhury</p>
+<p align="center"><strong>ID</strong><strong>:&nbsp; </strong>1812901042</p>
+<p align="center"><strong>Email</strong><strong>:</strong> <a href="mailto:jushraf.rahman@northsouth.edu">jushraf.rahman@northsouth.edu</a></p>
+<p align="center"><strong>Git Repository</strong><strong>: </strong><a href="https://github.com/NSU-FA20-CSE299-2/Group08">https://github.com/NSU-FA20-CSE299-2/Group08</a></p>
+<p align="center"><strong>Date Prepared</strong><strong>: </strong>22/01/2021</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<div align="justify">
+
+<h1 align="center">Fitness365</h1>
+
+<h3> Introduction:</h3></body></html>
 The idea of my project is to digitalize the relationship and all the processes that happen between a gym owner/manager and its members. It will help the owner maintain all the payment records, membership details, user data, etc. all in a single platform. The member will also be able to see his current diet-chart, workout-routine, payment history, etc.
 The main purpose of this system is to remove the prevalent analog system by bringing digitalized solution to improve the functionality of both users (owner & member) which will help them reach their goals in a faster calculated manner. 
-### Background
+<h3> Background</h3>
 The fitness and bodybuilding industry in Bangladesh is currently blooming like never before. Almost 3-4 gyms are getting launched every month all over Dhaka. But sadly the existing management system of the gyms are very primitive and technologically backdated. Still now papers and pen are being used to record the registration of clients, attendance, their monthly fees, workout routines, diet charts, equipment maintenance, etc. As a result it becomes extremely tough for the manager to monitor and keep everything in sync. The clients also don’t remember to bring their workout routines every day or forget to maintain their daily diet as those papers are not always around. It creates obstruction in reaching their goals. The Gym Management has been created to remove all these hassles and make everything simple for both the manager/owner and the clients.
-### Purpose and Benefits
+<h3> Purpose and Benefits</h3>
 
 -	Viewing weekly/monthly money transactions and logistics at one go which was never possible before.
 -	Providing a user-friendly system for clients to view their workout routine, diet charts and help them reach their goal faster.
